@@ -69,7 +69,7 @@ Interactive 9x9 Sudoku board with real-time validation and conflict detection. C
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/yourusername/react-challenges.git
+   git clone https://github.com/golammostafa13/react-forge.git
    cd react-challenges
    ```
 
@@ -186,9 +186,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 If you have any questions or need help:
 
-- 📧 Email: your-email@example.com
-- 🐛 Issues: [GitHub Issues](https://github.com/yourusername/react-challenges/issues)
-- 💬 Discussions: [GitHub Discussions](https://github.com/yourusername/react-challenges/discussions)
+- 📧 Email: mostafarmstu@gmail.com
+- 🐛 Issues: [GitHub Issues](https://github.com/golammostafa13/react-forge/issues)
+- 💬 Discussions: [GitHub Discussions](https://github.com/golammostafa13/react-forge/discussions)
 
 ---
 
