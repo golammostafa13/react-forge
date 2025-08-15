@@ -55,23 +55,25 @@ Interactive 9x9 Sudoku board with real-time validation and conflict detection. C
 
 Create an interactive pill splitting interface with precise measurements, visual feedback, and practical medication management features. Master interactive UI design and precision controls.
 
-**Rules:** `https://www.notion.so/Pill-Splitter-2502bb6138708023b05fc6661657f342`
+**Rules:** [View Rules](https://www.notion.so/Pill-Splitter-2502bb6138708023b05fc6661657f342)
 
 ### 7. Window Slider
 
-**Difficulty:** Intermediate  
-**Learn:** Involves drag interactivity, data-structures
+**Difficulty:** Advanced  
+**Learn:** Component composition, state management, real-time updates
 
-Create an interactive pill splitting interface with precise measurements, visual feedback, and practical medication management features. Master interactive UI design and precision controls.
+Create a window slider with smooth transitions, real-time resizing, and interactive controls. Master component composition and state management.
 
-**Rules:** `https://www.notion.so/Window-Tiler-2502bb613870805fab47ed8b4e092a3b?source=copy_link`
+**Rules:** [View Rules](https://www.notion.so/Window-Tiler-2502bb613870805fab47ed8b4e092a3b?source=copy_link)
 
 ### 8. Shuffle Board
 
-**Difficulty:** Intermediate  
-**Learn:** Involves drag interactivity, HTML/CSS-এর চোরাই বুদ্ধি
+**Difficulty:** Expert  
+**Learn:** Complex state management, game logic, real-time updates
 
-**Rules:** `https://www.notion.so/Shuffle-Board-2502bb613870800b85f3f971525d2c65?source=copy_link`
+Create a shuffle board with interactive tiles, real-time shuffling, and practical game logic. Master complex state management and game development.
+
+**Rules:** [View Rules](https://www.notion.so/Shuffle-Board-2502bb613870800b85f3f971525d2c65?source=copy_link)
 
 ## 🛠️ Technologies Used
 
