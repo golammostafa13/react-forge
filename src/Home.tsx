@@ -7,7 +7,7 @@ interface Challenge {
     description: string;
     icon: string;
     path: string;
-    difficulty: 'Beginner' | 'Intermediate' | 'Advanced';
+    difficulty: 'Beginner' | 'Intermediate' | 'Advanced' | 'Expert';
     features: string[];
     color: string;
 }
@@ -62,6 +62,33 @@ const challenges: Challenge[] = [
         difficulty: "Advanced",
         features: ["Game Logic", "Validation", "Grid Management"],
         color: "from-pink-500 to-rose-500"
+    }, {
+        id: 6,
+        title: "Pill Splitter",
+        description: "Create an interactive pill splitting interface with precise measurements, visual feedback, and practical medication management features.",
+        icon: "💊",
+        path: "/challenge6",
+        difficulty: "Intermediate",
+        features: ["Interactive UI", "Precision Controls", "Visual Feedback", "Practical Application"],
+        color: "from-emerald-500 to-teal-500"
+    }, {
+        id: 7,
+        title: "Window Slider",
+        description: "Create a window slider with smooth transitions, real-time resizing, and interactive controls. Master component composition and state management.",
+        icon: "🪟",
+        path: "/challenge7",
+        difficulty: "Advanced",
+        features: ["Component Composition", "State Management", "Real-time Updates"],
+        color: "from-purple-500 to-violet-500"
+    }, {
+        id: 8,
+        title: "Shuffle Board",
+        description: "Create a shuffle board with interactive tiles, real-time shuffling, and practical game logic. Master complex state management and game development.",
+        icon: "🎲",
+        path: "/challenge8",
+        difficulty: "Expert",
+        features: ["Complex State", "Game Logic", "Real-time Updates"],
+        color: "from-red-500 to-pink-500"
     }
 ];
 
@@ -70,6 +97,7 @@ const getDifficultyColor = (difficulty: string) => {
         case 'Beginner': return 'bg-green-100 text-green-800';
         case 'Intermediate': return 'bg-yellow-100 text-yellow-800';
         case 'Advanced': return 'bg-red-100 text-red-800';
+        case 'Expert': return 'bg-purple-100 text-purple-800';
         default: return 'bg-gray-100 text-gray-800';
     }
 };
@@ -110,11 +138,11 @@ const Home = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
                     <div className="bg-white rounded-xl shadow-lg p-8">
-                        <div className="text-4xl font-bold text-indigo-600 mb-2">5</div>
+                        <div className="text-4xl font-bold text-indigo-600 mb-2">8</div>
                         <div className="text-gray-600">Interactive Challenges</div>
                     </div>
                     <div className="bg-white rounded-xl shadow-lg p-8">
-                        <div className="text-4xl font-bold text-purple-600 mb-2">15+</div>
+                        <div className="text-4xl font-bold text-purple-600 mb-2">25+</div>
                         <div className="text-gray-600">React Concepts Covered</div>
                     </div>
                     <div className="bg-white rounded-xl shadow-lg p-8">
@@ -135,57 +163,114 @@ const Home = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {challenges.map((challenge) => (
-                        <Link
-                            key={challenge.id}
-                            to={challenge.path}
-                            className="group block"
-                        >
-                            <div className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
-                                {/* Header */}
-                                <div className={`bg-gradient-to-r ${challenge.color} p-6`}>
-                                    <div className="flex items-center justify-between">
-                                        <div className="text-4xl">{challenge.icon}</div>
-                                        <span className={`px-3 py-1 rounded-full text-sm font-medium ${getDifficultyColor(challenge.difficulty)}`}>
-                                            {challenge.difficulty}
-                                        </span>
+                        challenge.id >= 6 ? (
+                            <a
+                                key={challenge.id}
+                                href={challenge.path}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="group block cursor-pointer"
+                            >
+                                <div className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
+                                    {/* Header */}
+                                    <div className={`bg-gradient-to-r ${challenge.color} p-6`}>
+                                        <div className="flex items-center justify-between">
+                                            <div className="text-4xl">{challenge.icon}</div>
+                                            <span className={`px-3 py-1 rounded-full text-sm font-medium ${getDifficultyColor(challenge.difficulty)}`}>
+                                                {challenge.difficulty}
+                                            </span>
+                                        </div>
+                                        <h3 className="text-2xl font-bold text-white mt-4 mb-2">
+                                            {challenge.title}
+                                        </h3>
                                     </div>
-                                    <h3 className="text-2xl font-bold text-white mt-4 mb-2">
-                                        {challenge.title}
-                                    </h3>
-                                </div>
 
-                                {/* Content */}
-                                <div className="p-6">
-                                    <p className="text-gray-600 mb-4 leading-relaxed">
-                                        {challenge.description}
-                                    </p>
+                                    {/* Content */}
+                                    <div className="p-6">
+                                        <p className="text-gray-600 mb-4 leading-relaxed">
+                                            {challenge.description}
+                                        </p>
 
-                                    {/* Features */}
-                                    <div className="space-y-2 mb-6">
-                                        <div className="text-sm font-semibold text-gray-700 mb-2">What you'll learn:</div>
-                                        {challenge.features.map((feature, index) => (
-                                            <div key={index} className="flex items-center text-sm text-gray-600">
-                                                <div className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></div>
-                                                {feature}
+                                        {/* Features */}
+                                        <div className="space-y-2 mb-6">
+                                            <div className="text-sm font-semibold text-gray-700 mb-2">What you'll learn:</div>
+                                            {challenge.features.map((feature, index) => (
+                                                <div key={index} className="flex items-center text-sm text-gray-600">
+                                                    <div className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></div>
+                                                    {feature}
+                                                </div>
+                                            ))}
+                                        </div>
+
+                                        {/* Call to Action */}
+                                        <div className="flex items-center justify-between">
+                                            <span className="text-lg font-semibold text-gray-800">
+                                                Challenge {challenge.id}
+                                            </span>
+                                            <div className="flex items-center text-indigo-600 group-hover:text-indigo-800 transition-colors">
+                                                <span className="mr-2 font-medium">Start Challenge</span>
+                                                <span className="mr-1 text-xs">↗</span>
+                                                <svg className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                                                </svg>
                                             </div>
-                                        ))}
-                                    </div>
-
-                                    {/* Call to Action */}
-                                    <div className="flex items-center justify-between">
-                                        <span className="text-lg font-semibold text-gray-800">
-                                            Challenge {challenge.id}
-                                        </span>
-                                        <div className="flex items-center text-indigo-600 group-hover:text-indigo-800 transition-colors">
-                                            <span className="mr-2 font-medium">Start Challenge</span>
-                                            <svg className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                                            </svg>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </Link>
+                            </a>
+                        ) : (
+                            <Link
+                                key={challenge.id}
+                                to={challenge.path}
+                                className="group block"
+                            >
+                                <div className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
+                                    {/* Header */}
+                                    <div className={`bg-gradient-to-r ${challenge.color} p-6`}>
+                                        <div className="flex items-center justify-between">
+                                            <div className="text-4xl">{challenge.icon}</div>
+                                            <span className={`px-3 py-1 rounded-full text-sm font-medium ${getDifficultyColor(challenge.difficulty)}`}>
+                                                {challenge.difficulty}
+                                            </span>
+                                        </div>
+                                        <h3 className="text-2xl font-bold text-white mt-4 mb-2">
+                                            {challenge.title}
+                                        </h3>
+                                    </div>
+
+                                    {/* Content */}
+                                    <div className="p-6">
+                                        <p className="text-gray-600 mb-4 leading-relaxed">
+                                            {challenge.description}
+                                        </p>
+
+                                        {/* Features */}
+                                        <div className="space-y-2 mb-6">
+                                            <div className="text-sm font-semibold text-gray-700 mb-2">What you'll learn:</div>
+                                            {challenge.features.map((feature, index) => (
+                                                <div key={index} className="flex items-center text-sm text-gray-600">
+                                                    <div className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></div>
+                                                    {feature}
+                                                </div>
+                                            ))}
+                                        </div>
+
+                                        {/* Call to Action */}
+                                        <div className="flex items-center justify-between">
+                                            <span className="text-lg font-semibold text-gray-800">
+                                                Challenge {challenge.id}
+                                            </span>
+                                            <div className="flex items-center text-indigo-600 group-hover:text-indigo-800 transition-colors">
+                                                <span className="mr-2 font-medium">Start Challenge</span>
+                                                <svg className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </Link>
+                        )
                     ))}
                 </div>
             </div>

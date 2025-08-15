@@ -4,7 +4,7 @@ An interactive learning platform featuring hands-on React challenges designed to
 
 ## ✨ Features
 
-- **5 Progressive Challenges** - From beginner to advanced React concepts
+- **8 Progressive Challenges** - From beginner to advanced React concepts
 - **Interactive Learning** - Learn by building real applications
 - **Modern React Patterns** - Hooks, Context, TypeScript, and more
 - **Beautiful UI** - Responsive design with Tailwind CSS
@@ -47,6 +47,27 @@ Create forms dynamically with various field types and see real-time JSON output.
 **Learn:** Game Logic, Validation, Grid Management
 
 Interactive 9x9 Sudoku board with real-time validation and conflict detection. Complex game logic implementation and performance optimization.
+
+### 6. 🎨 Pill Splitter
+
+**Difficulty:** Intermediate  
+**Learn:** Interactive UI, Precision Controls, Visual Feedback
+
+Create an interactive pill splitting interface with precise measurements, visual feedback, and practical medication management features. Master interactive UI design and precision controls.
+
+### 7. 🔍 Advanced Search & Filter
+
+**Difficulty:** Advanced  
+**Learn:** Search Algorithms, Filtering, Performance Optimization
+
+Create a powerful search and filter system with debounced input, advanced filtering options, and optimized performance for large datasets.
+
+### 8. 🎮 Real-time Multiplayer Game
+
+**Difficulty:** Expert  
+**Learn:** WebSockets, Real-time Communication, Game State Management
+
+Build a real-time multiplayer game with WebSocket connections, synchronized game state, and collaborative gameplay features.
 
 ## 🛠️ Technologies Used
 
@@ -112,6 +133,9 @@ src/
 ├── Challenge3.tsx       # File Explorer
 ├── Challenge4.tsx       # Dynamic Form Builder
 ├── Challenge5.tsx       # Sudoku Puzzle
+├── Challenge6.tsx       # Pill Splitter
+├── Challenge7.tsx       # Window Slider
+├── Challenge8.tsx       # Shuffle Board
 ├── Home.tsx            # Landing page
 ├── App.tsx             # Main app component
 ├── routes.tsx          # Routing configuration
