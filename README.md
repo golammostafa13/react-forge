@@ -50,24 +50,28 @@ Interactive 9x9 Sudoku board with real-time validation and conflict detection. C
 
 ### 6. 🎨 Pill Splitter
 
-**Difficulty:** Intermediate  
-**Learn:** Interactive UI, Precision Controls, Visual Feedback
+**Difficulty:** Expert  
+**Learn:** Involves drag interactivity, geometric algorithms
 
 Create an interactive pill splitting interface with precise measurements, visual feedback, and practical medication management features. Master interactive UI design and precision controls.
 
-### 7. 🔍 Advanced Search & Filter
+**Rules:** `https://www.notion.so/Pill-Splitter-2502bb6138708023b05fc6661657f342`
 
-**Difficulty:** Advanced  
-**Learn:** Search Algorithms, Filtering, Performance Optimization
+### 7. Window Slider
 
-Create a powerful search and filter system with debounced input, advanced filtering options, and optimized performance for large datasets.
+**Difficulty:** Intermediate  
+**Learn:** Involves drag interactivity, data-structures
 
-### 8. 🎮 Real-time Multiplayer Game
+Create an interactive pill splitting interface with precise measurements, visual feedback, and practical medication management features. Master interactive UI design and precision controls.
 
-**Difficulty:** Expert  
-**Learn:** WebSockets, Real-time Communication, Game State Management
+**Rules:** `https://www.notion.so/Window-Tiler-2502bb613870805fab47ed8b4e092a3b?source=copy_link`
 
-Build a real-time multiplayer game with WebSocket connections, synchronized game state, and collaborative gameplay features.
+### 8. Shuffle Board
+
+**Difficulty:** Intermediate  
+**Learn:** Involves drag interactivity, HTML/CSS-এর চোরাই বুদ্ধি
+
+**Rules:** `https://www.notion.so/Shuffle-Board-2502bb613870800b85f3f971525d2c65?source=copy_link`
 
 ## 🛠️ Technologies Used
 
